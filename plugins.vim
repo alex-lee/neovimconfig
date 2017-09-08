@@ -13,4 +13,7 @@ Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'zchee/deoplete-go', {'do': 'make'}
 Plug 'jodosha/vim-godebug'
 
+" Python support.
+Plug 'zchee/deoplete-jedi'
+
 call plug#end()

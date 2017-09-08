@@ -20,6 +20,9 @@ inoremap jj <Esc>
 " Custom leader.
 let mapleader = ","
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
 " Grepper config.
 nnoremap <leader>g :Grepper<CR>
 let g:grepper = {'next_tool': '<leader>g'}
@@ -33,6 +36,9 @@ nnoremap <leader>a :cclose<CR>
 " See https://github.com/fatih/vim-go-tutorial for more options.
 au FileType go nmap <leader>cr <Plug>(go-callers)
 au FileType go nmap <leader>ce <Plug>(go-callees)
-au FileType go nmap <leader>l <Plug>(go-metalinter)
+au FileType go nmap <leader>l  <Plug>(go-metalinter)
 au FileType go nmap <leader>gi <Plug>(go-imports)
-au FileType go nmap <leader>i <Plug>(go-info)
+au FileType go nmap <leader>i  <Plug>(go-info)
+au FileType go nmap <leader>ta <Plug>(go-test)
+au FileType go nmap <leader>tf <Plug>(go-test-func)
+let g:go_metalinter_deadline = "10s"
