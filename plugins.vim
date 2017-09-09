@@ -6,6 +6,7 @@ Plug 'iCyMind/NeoSolarized'
 
 " Tools.
 Plug 'mhinz/vim-grepper'
+Plug 'neomake/neomake'
 
 " Go support.
 Plug 'fatih/vim-go'
