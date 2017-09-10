@@ -30,8 +30,9 @@ I'll continue using vim8 with python-mode for python development.
 ## Plugin Setup
 
 * Check the list of plugins in `plugins.vim`.
-* Be sure to run `:PlugInstall`.
+* Be sure to run `:PlugInstall` to install all plugins.
 * For vim-go, run `:GoInstallBinaries` or `:GoUpdateBinaries`.
+* For nvim-typescript, run `:UpdateRemotePlugins`.
 
 ## Suggestions
 

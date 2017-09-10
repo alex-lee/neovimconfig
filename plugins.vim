@@ -5,6 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'iCyMind/NeoSolarized'
 
 " Tools.
+Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'neomake/neomake'
 
@@ -16,5 +17,9 @@ Plug 'jodosha/vim-godebug'
 
 " Python support.
 Plug 'zchee/deoplete-jedi'
+
+" TypeScript support.
+Plug 'mhartington/nvim-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
 
 call plug#end()
