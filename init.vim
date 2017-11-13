@@ -25,6 +25,18 @@ set nofoldenable    " Disable folding.
 " This is easier than hitting escape or Ctrl-C.
 inoremap jj <Esc>
 
+" Improved window splitting and navigation.
+set splitbelow
+set splitright
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
+tnoremap <C-j> <C-\><C-n><C-w><C-j>
+tnoremap <C-k> <C-\><C-n><C-w><C-k>
+tnoremap <C-l> <C-\><C-n><C-w><C-l>
+tnoremap <C-h> <C-\><C-n><C-w><C-h>
+
 " Reformat a paragraph.
 nnoremap <leader>q gqap
 nnoremap Q gqap
