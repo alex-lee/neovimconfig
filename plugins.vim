@@ -1,6 +1,9 @@
 " Specify a directory for plugins.
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Integration.
+Plug 'christoomey/vim-tmux-navigator'
+
 " Appearance.
 Plug 'iCyMind/NeoSolarized'
 

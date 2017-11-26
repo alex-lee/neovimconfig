@@ -26,16 +26,9 @@ set nofoldenable    " Disable folding.
 inoremap jj <Esc>
 
 " Improved window splitting and navigation.
+" For navigation, install https://github.com/christoomey/vim-tmux-navigator
 set splitbelow
 set splitright
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
-tnoremap <C-j> <C-\><C-n><C-w><C-j>
-tnoremap <C-k> <C-\><C-n><C-w><C-k>
-tnoremap <C-l> <C-\><C-n><C-w><C-l>
-tnoremap <C-h> <C-\><C-n><C-w><C-h>
 
 " Reformat a paragraph.
 nnoremap <leader>q gqap
@@ -46,6 +39,10 @@ let mapleader = ","
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+
+" Neomake settings.
+let g:neomake_open_list=2
+nnoremap <leader>L :sign unplace *<CR>
 
 " Grepper config.
 nnoremap <leader>g :Grepper<CR>
