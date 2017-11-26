@@ -25,4 +25,8 @@ Plug 'zchee/deoplete-jedi'
 Plug 'mhartington/nvim-typescript'
 Plug 'HerringtonDarkholme/yats.vim'
 
+" Elixir support.
+Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+
 call plug#end()

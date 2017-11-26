@@ -42,6 +42,7 @@ let g:deoplete#enable_at_startup = 1
 
 " Neomake settings.
 let g:neomake_open_list=2
+nnoremap <leader>l :Neomake<CR>
 nnoremap <leader>L :sign unplace *<CR>
 
 " Grepper config.
@@ -53,6 +54,10 @@ nmap <C-n> :cnext<CR>
 nmap <C-p> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
+" Location navigation
+nmap <C-Down> :lnext<CR>
+nmap <C-Up> :lprevious<CR>
+
 " Go settings.
 " See https://github.com/fatih/vim-go-tutorial for more options.
 au FileType go nmap <leader>cr <Plug>(go-callers)
@@ -63,3 +68,6 @@ au FileType go nmap <leader>i  <Plug>(go-info)
 au FileType go nmap <leader>ta <Plug>(go-test)
 au FileType go nmap <leader>tf <Plug>(go-test-func)
 let g:go_metalinter_deadline = "10s"
+
+" Elixir settings.
+let g:neomake_elixir_enabled_makers = ['mix', 'credo']
