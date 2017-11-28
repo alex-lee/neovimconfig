@@ -37,6 +37,9 @@ nnoremap Q gqap
 " Custom leader.
 let mapleader = ","
 
+" File browser (netrw).
+nnoremap <leader>E :Explore<CR>
+
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
