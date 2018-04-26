@@ -12,6 +12,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'neomake/neomake'
 
+" Syntax.
+Plug 'cespare/vim-toml'
+
 " Go support.
 Plug 'fatih/vim-go'
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
