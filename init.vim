@@ -70,6 +70,7 @@ au FileType go nmap <leader>gi <Plug>(go-imports)
 au FileType go nmap <leader>i  <Plug>(go-info)
 au FileType go nmap <leader>ta <Plug>(go-test)
 au FileType go nmap <leader>tf <Plug>(go-test-func)
+au FileType go nmap <leader>d :GoDef<CR>
 let g:go_metalinter_deadline = "10s"
 
 " Elixir settings.
