@@ -14,6 +14,7 @@ Plug 'neomake/neomake'
 
 " Syntax.
 Plug 'cespare/vim-toml'
+Plug 'gabrielelana/vim-markdown'
 
 " Go support.
 Plug 'fatih/vim-go'
