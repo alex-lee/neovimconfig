@@ -27,12 +27,25 @@ let g:python3_host_prog = $HOME . '/.virtualenvs/neovim3/bin/python'
 I'm still waiting for improved goto and virtualenv support. Until then,
 I'll continue using vim8 with python-mode for python development.
 
-## Plugin Setup
+## Plugin setup
 
 * Check the list of plugins in `plugins.vim`.
 * Be sure to run `:PlugInstall` to install all plugins.
 * For vim-go, run `:GoInstallBinaries` or `:GoUpdateBinaries`.
 * For nvim-typescript, run `:UpdateRemotePlugins`.
+
+### Rust setup notes
+
+If running the stable toolchain, you probably want to add the following:
+```
+$ rustup component add rustfmt-preview
+$ rustup component add rls-preview rust-analysis rust-src
+```
+
+Also install `racer`:
+```
+$ cargo install racer
+```
 
 ## Suggestions
 

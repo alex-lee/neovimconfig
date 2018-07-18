@@ -32,4 +32,8 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 
+" Rust support.
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+
 call plug#end()

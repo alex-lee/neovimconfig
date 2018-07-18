@@ -75,3 +75,6 @@ let g:go_metalinter_deadline = "10s"
 
 " Elixir settings.
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
+
+" Rust settings.
+let g:rustfmt_autosave = 1
