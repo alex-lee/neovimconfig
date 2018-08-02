@@ -61,6 +61,9 @@ nnoremap <leader>a :cclose<CR>
 nmap <C-Down> :lnext<CR>
 nmap <C-Up> :lprevious<CR>
 
+" Markdown settings.
+let g:markdown_enable_spell_checking = 0
+
 " Go settings.
 " See https://github.com/fatih/vim-go-tutorial for more options.
 au FileType go nmap <leader>cr <Plug>(go-callers)
