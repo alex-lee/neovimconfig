@@ -34,6 +34,14 @@ I'll continue using vim8 with python-mode for python development.
 * For vim-go, run `:GoInstallBinaries` or `:GoUpdateBinaries`.
 * For nvim-typescript, run `:UpdateRemotePlugins`.
 
+### Go setup notes
+
+As of August 2018 there's an issue with `gocode` and the indexed export
+format introduced in go1.11. To resolve, use mdempsky's fork:
+```
+$ go get -u github.com/mdempsky/gocode
+```
+
 ### Rust setup notes
 
 If running the stable toolchain, you probably want to add the following:
