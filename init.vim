@@ -70,6 +70,7 @@ au FileType go nmap <leader>cr <Plug>(go-callers)
 au FileType go nmap <leader>ce <Plug>(go-callees)
 au FileType go nmap <leader>l  <Plug>(go-metalinter)
 au FileType go nmap <leader>e  :GoErrCheck<CR>
+au FileType go nmap <leader>v  <Plug>(go-vet)
 au FileType go nmap <leader>gi <Plug>(go-imports)
 au FileType go nmap <leader>i  <Plug>(go-info)
 au FileType go nmap <leader>ta <Plug>(go-test)
