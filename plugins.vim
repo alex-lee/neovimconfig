@@ -11,6 +11,7 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'neomake/neomake'
+Plug 'tpope/vim-fugitive'
 
 " Syntax.
 Plug 'cespare/vim-toml'
@@ -26,7 +27,7 @@ Plug 'jodosha/vim-godebug'
 Plug 'zchee/deoplete-jedi'
 
 " TypeScript support.
-Plug 'mhartington/nvim-typescript'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'HerringtonDarkholme/yats.vim'
 
 " Elixir support.
