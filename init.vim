@@ -78,6 +78,7 @@ au FileType go nmap <leader>tf <Plug>(go-test-func)
 au FileType go nmap <leader>d :GoDef<CR>
 let g:go_metalinter_deadline = "10s"
 let g:go_metalinter_disabled = ['errcheck']
+let g:go_def_mode = "gopls"
 
 " Elixir settings.
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
