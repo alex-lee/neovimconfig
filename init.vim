@@ -92,21 +92,6 @@ nmap <C-Up> :lprevious<CR>
 " Markdown settings.
 let g:markdown_enable_spell_checking = 0
 
-" Go settings.
-" See https://github.com/fatih/vim-go-tutorial for more options.
-au FileType go nmap <leader>cr <Plug>(go-callers)
-au FileType go nmap <leader>ce <Plug>(go-callees)
-au FileType go nmap <leader>l  <Plug>(go-metalinter)
-au FileType go nmap <leader>e  :GoErrCheck<CR>
-au FileType go nmap <leader>v  <Plug>(go-vet)
-au FileType go nmap <leader>gi <Plug>(go-imports)
-au FileType go nmap <leader>i  <Plug>(go-info)
-au FileType go nmap <leader>ta <Plug>(go-test)
-au FileType go nmap <leader>tf <Plug>(go-test-func)
-let g:go_metalinter_deadline = "10s"
-let g:go_metalinter_disabled = ['errcheck']
-let g:go_def_mapping_enabled = 0  " disable :GoDef short cut
-
 " Elixir settings.
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
 
