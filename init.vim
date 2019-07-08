@@ -40,8 +40,36 @@ let mapleader = ","
 " File browser (netrw).
 nnoremap <leader>E :Explore<CR>
 
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
+" ==============================================================================
+" CoC settings.
+" Based on sample config at https://github.com/neoclide/coc.nvim
+
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Use `[c` and `]c` to navigate diagnostics
+nmap <silent> [c <Plug>(coc-diagnostic-prev)
+nmap <silent> ]c <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" ==============================================================================
 
 " Neomake settings.
 let g:neomake_open_list=2
@@ -75,10 +103,9 @@ au FileType go nmap <leader>gi <Plug>(go-imports)
 au FileType go nmap <leader>i  <Plug>(go-info)
 au FileType go nmap <leader>ta <Plug>(go-test)
 au FileType go nmap <leader>tf <Plug>(go-test-func)
-au FileType go nmap <leader>d :GoDef<CR>
 let g:go_metalinter_deadline = "10s"
 let g:go_metalinter_disabled = ['errcheck']
-let g:go_def_mode = "gopls"
+let g:go_def_mapping_enabled = 0  " disable :GoDef short cut
 
 " Elixir settings.
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']

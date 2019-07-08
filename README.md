@@ -33,13 +33,13 @@ I'll continue using vim8 with python-mode for python development.
 * Be sure to run `:PlugInstall` to install all plugins.
 * For vim-go, run `:GoInstallBinaries` or `:GoUpdateBinaries`.
 
+### Elm setup notes
+
+See [elm-tooling/elm-vim](https://github.com/elm-tooling/elm-vim).
+
 ### Go setup notes
 
-As of August 2018 there's an issue with `gocode` and the indexed export
-format introduced in go1.11. To resolve, use mdempsky's fork:
-```
-$ go get -u github.com/mdempsky/gocode
-```
+See [vim as a Go IDE](https://octetz.com/posts/vim-as-go-ide).
 
 ### Rust setup notes
 
@@ -58,7 +58,3 @@ $ cargo install racer
 
 Install `ag` for use with vim-grepper (`sudo apt-get install
 silversearcher-ag` vel sim.).
-
-## References
-
-* [neovim and go](https://medium.com/@ambot/neovim-and-go-8f32e6390f71)
