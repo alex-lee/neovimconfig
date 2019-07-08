@@ -19,20 +19,7 @@ Plug 'gabrielelana/vim-markdown'
 
 " Go support.
 Plug 'fatih/vim-go'
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'zchee/deoplete-go', {'do': 'make'}
 Plug 'jodosha/vim-godebug'
-
-" Python support.
-Plug 'zchee/deoplete-jedi'
-
-" TypeScript support.
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'HerringtonDarkholme/yats.vim'
-
-" Elixir support.
-Plug 'elixir-editors/vim-elixir'
-Plug 'slashmili/alchemist.vim'
 
 " Rust support.
 Plug 'rust-lang/rust.vim'
