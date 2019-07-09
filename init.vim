@@ -69,6 +69,13 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Show all diagnostics
+nnoremap <leader>a :<C-u>CocList diagnostics<cr>
+" Do default action for next item.
+nnoremap <leader>j :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <leader>k :<C-u>CocPrev<CR>
+
 " ==============================================================================
 
 " Neomake settings.
@@ -83,7 +90,6 @@ let g:grepper = {'next_tool': '<leader>g'}
 " Quickfix navigation
 nmap <C-n> :cnext<CR>
 nmap <C-p> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
 
 " Location navigation
 nmap <C-Down> :lnext<CR>
