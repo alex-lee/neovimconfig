@@ -64,6 +64,7 @@ nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
+let g:go_def_mapping_enabled = 0 " Disable vim-go's :GoDef.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -75,6 +76,9 @@ nnoremap <leader>a :<C-u>CocList diagnostics<cr>
 nnoremap <leader>j :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <leader>k :<C-u>CocPrev<CR>
+
+" Shortcut for formatting
+nmap <leader>f :call CocAction('format')<CR>
 
 " ==============================================================================
 

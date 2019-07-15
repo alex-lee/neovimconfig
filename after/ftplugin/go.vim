@@ -13,6 +13,3 @@ nmap <leader>tf <Plug>(go-test-func)
 
 let g:go_metalinter_deadline = "10s"
 let g:go_metalinter_disabled = ['errcheck']
-
-" Disable :GoDef short cut. Using Coc instead.
-let g:go_def_mapping_enabled = 0
