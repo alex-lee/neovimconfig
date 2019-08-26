@@ -54,6 +54,16 @@ Also install `racer`:
 $ cargo install racer
 ```
 
+### Javascript/TypeScript setup notes
+
+```
+$ yarn global add typescript
+
+# Then in nvim:
+:CocInstall coc-tsserver
+:CocInstall coc-eslint
+```
+
 ## Suggestions
 
 Install `ag` for use with vim-grepper (`sudo apt-get install

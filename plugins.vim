@@ -28,6 +28,11 @@ Plug 'jodosha/vim-godebug'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
+" Javascript/TypeScript support.
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+
 " Completion and LSP integration.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
