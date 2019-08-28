@@ -30,7 +30,7 @@ Plug 'racer-rust/vim-racer'
 
 " Javascript/TypeScript support.
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Completion and LSP integration.

@@ -64,6 +64,11 @@ $ yarn global add typescript
 :CocInstall coc-eslint
 ```
 
+See also this [guide to modern Web Development with
+(Neo)vim][neovim-web-guide].
+
+[neovim-web-guide]: https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/
+
 ## Suggestions
 
 Install `ag` for use with vim-grepper (`sudo apt-get install
