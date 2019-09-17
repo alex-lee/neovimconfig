@@ -60,8 +60,7 @@ $ cargo install racer
 $ yarn global add typescript
 
 # Then in nvim:
-:CocInstall coc-tsserver
-:CocInstall coc-eslint
+:CocInstall coc-tsserver coc-eslint coc-json coc-css
 ```
 
 See also this [guide to modern Web Development with
