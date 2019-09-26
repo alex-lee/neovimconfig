@@ -14,6 +14,10 @@ set number
 set background=dark
 colorscheme NeoSolarized
 
+if exists('+termguicolors')
+  set termguicolors
+endif
+
 set mouse=a         " Enable mouse usage (all modes).
 set scrolloff=4     " Show some context at top and bottom of window.
 set tabstop=4
