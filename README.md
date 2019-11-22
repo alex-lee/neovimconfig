@@ -41,6 +41,8 @@ See [elm-tooling/elm-vim](https://github.com/elm-tooling/elm-vim).
 
 See [vim as a Go IDE](https://octetz.com/posts/vim-as-go-ide).
 
+Be sure to install [golangci-lint](https://github.com/golangci/golangci-lint).
+
 ### Rust setup notes
 
 If running the stable toolchain, you probably want to add the following:
