@@ -82,7 +82,7 @@ nnoremap <leader>j :<C-u>CocNext<CR>
 nnoremap <leader>k :<C-u>CocPrev<CR>
 
 " Shortcut for formatting
-nmap <leader>f :call CocAction('format')<CR>
+nmap <leader>F :call CocAction('format')<CR>
 
 " ==============================================================================
 
@@ -91,10 +91,6 @@ let g:neomake_open_list=2
 nnoremap <leader>l :Neomake<CR>
 nnoremap <leader>L :sign unplace *<CR>
 
-" Grepper config.
-nnoremap <leader>g :Grepper<CR>
-let g:grepper = {'next_tool': '<leader>g'}
-
 " Quickfix navigation
 nmap <C-n> :cnext<CR>
 nmap <C-p> :cprevious<CR>
@@ -102,6 +98,11 @@ nmap <C-p> :cprevious<CR>
 " Location navigation
 nmap <C-Down> :lnext<CR>
 nmap <C-Up> :lprevious<CR>
+
+" fzf shortcuts
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :Rg<CR>
+nnoremap <leader>fb :Buffers<CR>
 
 " Markdown settings.
 let g:markdown_enable_spell_checking = 0

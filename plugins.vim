@@ -8,10 +8,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'iCyMind/NeoSolarized'
 
 " Tools.
-Plug 'editorconfig/editorconfig-vim'
-Plug 'mhinz/vim-grepper'
 Plug 'neomake/neomake'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Syntax.
 Plug 'cespare/vim-toml'
