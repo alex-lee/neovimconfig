@@ -63,9 +63,9 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" Use `[c` and `]c` to navigate diagnostics
-nmap <silent> [c <Plug>(coc-diagnostic-prev)
-nmap <silent> ]c <Plug>(coc-diagnostic-next)
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
 let g:go_def_mapping_enabled = 0 " Disable vim-go's :GoDef.
@@ -96,13 +96,17 @@ nmap <C-n> :cnext<CR>
 nmap <C-p> :cprevious<CR>
 
 " Location navigation
-nmap <C-Down> :lnext<CR>
-nmap <C-Up> :lprevious<CR>
+nmap <silent> [l :lprevious<CR>
+nmap <silent> ]l :lnext<CR>
 
 " fzf shortcuts
 nnoremap <leader>ff :Files<CR>
-nnoremap <leader>fg :Rg<CR>
 nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fl :BLines<CR>
+nnoremap <leader>fL :Lines<CR>
+nnoremap <leader>ft :BTags<CR>
+nnoremap <leader>fT :Tags<CR>
+nnoremap <leader>rr :Rg<Space>
 
 " Markdown settings.
 let g:markdown_enable_spell_checking = 0
