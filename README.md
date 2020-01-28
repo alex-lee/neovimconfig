@@ -11,17 +11,25 @@ doesn't have this package.
 There are various ways to work around this. Your best bet is to set up
 virtualenvs that are dedicated to neovim (one for Python 2, another for
 Python 3), and to specify these in your neovim config.
+
+Something like the following will work (exact Python versions may differ),
+assuming that you have [pyenv] and [pyenv-virtualenv] installed.
+
+[pyenv]: https://github.com/pyenv/pyenv
+[pyenv-virtualenv]: https://github.com/pyenv/pyenv-virtualenv
+
 ```
-mkvirtualenv -p /path/to/python2 neovim2
-pip install neovim jedi
-mkvirtualenv -p /path/to/python3 neovim3
-pip install neovim jedi
+$ pyenv virtualenv 2.7.17 neovim2
+$ pip install pynvim
+$ pyenv virtualenv 3.7.5 neovim3
+$ pip install pynvim
 ```
 
 Then point neovim to these virtualenvs:
+
 ```
-let g:python_host_prog = $HOME . '/.virtualenvs/neovim2/bin/python'
-let g:python3_host_prog = $HOME . '/.virtualenvs/neovim3/bin/python'
+let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
 ```
 
 I'm still waiting for improved goto and virtualenv support. Until then,
@@ -69,8 +77,3 @@ See also this [guide to modern Web Development with
 (Neo)vim][neovim-web-guide].
 
 [neovim-web-guide]: https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/
-
-## Suggestions
-
-Install `ag` for use with vim-grepper (`sudo apt-get install
-silversearcher-ag` vel sim.).

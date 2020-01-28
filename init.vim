@@ -2,8 +2,8 @@
 " These should be virtualenvs set up for neovim.
 " If not set, you will encounter problems when working in other virtualenvs.
 " https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim
-let g:python_host_prog = $HOME . '/.virtualenvs/neovim2/bin/python'
-let g:python3_host_prog = $HOME . '/.virtualenvs/neovim3/bin/python'
+let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
 
 " Load plugins.
 if filereadable(expand('~/.config/nvim/plugins.vim'))
