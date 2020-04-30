@@ -1,5 +1,8 @@
 # Neovim setup notes
 
+**Note: This has been superseded by the unified [vim/neovim
+config](https://github.com/alex-lee/vimconfig).**
+
 Clone this repository into `~/.config/nvim`.
 
 ## Neovim python support
